@@ -3,7 +3,6 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Playfair Display', serif;
 */
 
-/* CSS Reset
 /* Basic Reset */
 *,
 *::before,
@@ -13,55 +12,17 @@ font-family: 'Playfair Display', serif;
   box-sizing: border-box;
 }
 
-/* Ensure the HTML and body take up the full height of the viewport */
-html,
-body {
-  height: 100%;
-}
-
-/* Set a base font size and line height */
-html {
-  font-size: 100%; /* Equivalent to 16px */
-  line-height: 1.5;
-}
-
-/* Remove list styles on all lists (ul, ol) */
-ul,
-ol {
-  list-style: none;
-}
-
-/* Remove default text decoration for anchor tags */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Remove the default button appearance */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Ensure images scale nicely */
 img {
-  display: block;
-  max-width: 100%;
+  width: 30px;
   height: auto;
 }
 
-/* Remove default spacing in form elements */
-input,
-textarea {
-  margin: 0;
-  font: inherit;
+/* .container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* Add inheritance for box-sizing to form elements */
-button,
-input,
-textarea,
-select {
-  box-sizing: inherit;
-}
+ol,
+ul {
+  list-style: none;
+} */
