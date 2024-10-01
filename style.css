@@ -97,6 +97,7 @@ footer {
 
 .about-image img {
   width: 100%; /* Ensures the image takes full width */
+  height: 100%;
   object-fit: cover; /* Keeps aspect ratio while covering the area */
 }
 
@@ -121,7 +122,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 0.5em;
-  height: 400px;
+  min-height: 300px;
 }
 
 .projects-row {
@@ -143,7 +144,8 @@ footer {
 
 .project-card > img {
   width: 100%;
-  height: 50%;
+  height: 30%;
+  max-height: 150px;
   object-fit: cover;
   flex-grow: 1;
   margin-bottom: 1em;
@@ -190,7 +192,4 @@ address > section {
   width: 80%;
   height: 100%;
   object-fit: cover;
-}
-
-address p {
 }
