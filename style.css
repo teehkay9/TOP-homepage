@@ -170,11 +170,13 @@ address {
   display: flex;
   flex-direction: column;
   gap: 0.6em;
+  justify-content: center;
 }
 
 address > section {
   display: flex;
   gap: 0.7em;
+  align-items: center;
 }
 
 .contact-image {
@@ -188,4 +190,7 @@ address > section {
   width: 80%;
   height: 100%;
   object-fit: cover;
+}
+
+address p {
 }
