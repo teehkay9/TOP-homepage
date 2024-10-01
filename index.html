@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container">
-      <section class="about-image">
+    <header class="container row">
+      <section class="about-image col">
         <img src="./assets/pexels-goumbik-574071.jpg" alt="" />
       </section>
-      <section>
+      <section class="about-content col">
         <h1>About Me</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam. Exercitationem ipsum maiores necessitatibus sapiente ut sint,
           doloribus, incidunt, dolores velit laudantium non maxime veniam quasi magnam ducimus facere placeat! Quisquam, fugit ullam aliquam ipsam
           maiores nisi harum iste excepturi veritatis perspiciatis? Ipsum quisquam, impedit architecto corrupti quos ex quas.
         </p>
-        <ul>
+        <ul class="about-links row">
           <li>
             <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
           </li>
@@ -33,48 +33,66 @@
     </header>
     <main class="container">
       <h1>My Work</h1>
-      <article class="project-card">
-        <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
-        <h2>Project Title</h2>
-        <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
-        <img src="./assets/open-in-new.svg" alt="" />
-        <p>Brief description of the project and its purpose.</p>
-      </article>
-      <article class="project-card">
-        <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
-        <h2>Project Title</h2>
-        <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
-        <img src="./assets/open-in-new.svg" alt="" />
-        <p>Brief description of the project and its purpose.</p>
-      </article>
-      <article class="project-card">
-        <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
-        <h2>Project Title</h2>
-        <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
-        <img src="./assets/open-in-new.svg" alt="" />
-        <p>Brief description of the project and its purpose.</p>
-      </article>
-      <article class="project-card">
-        <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
-        <h2>Project Title</h2>
-        <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
-        <img src="./assets/open-in-new.svg" alt="" />
-        <p>Brief description of the project and its purpose.</p>
-      </article>
-      <article class="project-card">
-        <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
-        <h2>Project Title</h2>
-        <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
-        <img src="./assets/open-in-new.svg" alt="" />
-        <p>Brief description of the project and its purpose.</p>
-      </article>
-      <article class="project-card">
-        <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
-        <h2>Project Title</h2>
-        <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
-        <img src="./assets/open-in-new.svg" alt="" />
-        <p>Brief description of the project and its purpose.</p>
-      </article>
+      <div class="row projects-container">
+        <div class="row projects-row">
+          <article class="project-card">
+            <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
+            <div class="inner-container">
+              <h2>Project Title</h2>
+              <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
+              <img src="./assets/open-in-new.svg" alt="" />
+            </div>
+            <p>Brief description of the project and its purpose.</p>
+          </article>
+          <article class="project-card">
+            <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
+            <div class="inner-container">
+              <h2>Project Title</h2>
+              <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
+              <img src="./assets/open-in-new.svg" alt="" />
+            </div>
+            <p>Brief description of the project and its purpose.</p>
+          </article>
+          <article class="project-card">
+            <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
+            <div class="inner-container">
+              <h2>Project Title</h2>
+              <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
+              <img src="./assets/open-in-new.svg" alt="" />
+            </div>
+            <p>Brief description of the project and its purpose.</p>
+          </article>
+        </div>
+        <div class="row projects-row">
+          <article class="project-card">
+            <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
+            <div class="inner-container">
+              <h2>Project Title</h2>
+              <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
+              <img src="./assets/open-in-new.svg" alt="" />
+            </div>
+            <p>Brief description of the project and its purpose.</p>
+          </article>
+          <article class="project-card">
+            <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
+            <div class="inner-container">
+              <h2>Project Title</h2>
+              <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
+              <img src="./assets/open-in-new.svg" alt="" />
+            </div>
+            <p>Brief description of the project and its purpose.</p>
+          </article>
+          <article class="project-card">
+            <img src="./assets/placeholder.jpeg" alt="Screenshot of Project X" />
+            <div class="inner-container">
+              <h2>Project Title</h2>
+              <a href="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
+              <img src="./assets/open-in-new.svg" alt="" />
+            </div>
+            <p>Brief description of the project and its purpose.</p>
+          </article>
+        </div>
+      </div>
     </main>
     <footer class="container">
       <h1>Contact Me</h1>

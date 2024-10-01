@@ -12,17 +12,139 @@ font-family: 'Playfair Display', serif;
   box-sizing: border-box;
 }
 
+/* Ensure the HTML and body take up the full height of the viewport */
+html,
+body {
+  height: 100%;
+}
+
+/* Set a base font size and line height */
+html {
+  font-size: 100%; /* Equivalent to 16px */
+  line-height: 1.5;
+}
+
+/* Remove list styles on all lists (ul, ol) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default text decoration for anchor tags */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove the default button appearance */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ensure images scale nicely */
 img {
-  width: 30px;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
-/* .container {
-  width: 80%;
-  margin: 0 auto;
+/* Remove default spacing in form elements */
+input,
+textarea {
+  margin: 0;
+  font: inherit;
 }
 
-ol,
-ul {
-  list-style: none;
-} */
+/* Add inheritance for box-sizing to form elements */
+button,
+input,
+textarea,
+select {
+  box-sizing: inherit;
+}
+
+img {
+  width: 2rem;
+  height: auto;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+header,
+footer {
+  background-color: rgb(124, 179, 225);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  background-color: white;
+  flex: 1;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-image img {
+  width: 100%; /* Ensures the image takes full width */
+  object-fit: cover; /* Keeps aspect ratio while covering the area */
+}
+
+.about-image,
+.about-content {
+  flex: 1; /* This makes both sections grow equally */
+}
+
+.about-links {
+  justify-content: end;
+  gap: 1em;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Set to row */
+  gap: 1em;
+}
+
+.project-card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  height: 400px;
+}
+
+.projects-row {
+  display: flex;
+  gap: 1em;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1; /* Share space with the paragraph */
+}
+
+.project-card > p {
+  flex-grow: 1; /* Make the paragraph take up the remaining space */
+  margin-top: 1em;
+}
+
+.project-card > img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  flex-grow: 1;
+  margin-bottom: 1em;
+}
