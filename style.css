@@ -78,7 +78,7 @@ img {
 
 header,
 footer {
-  background-color: rgb(124, 179, 225);
+  background-color: rgb(74, 147, 206);
 }
 
 .row {
@@ -147,4 +147,45 @@ footer {
   object-fit: cover;
   flex-grow: 1;
   margin-bottom: 1em;
+}
+
+.container > h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+/* footer */
+
+.contact-content {
+  width: 40%;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+address > section {
+  display: flex;
+  gap: 0.7em;
+}
+
+.contact-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image > img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
 }
