@@ -11,7 +11,6 @@ font-family: 'Playfair Display', serif;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Ensure the HTML and body take up the full height of the viewport */
 html,
 body {
@@ -65,6 +64,20 @@ select {
   box-sizing: inherit;
 }
 
+/*Fonts & Typography*/
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Playfair Display", serif;
+}
+
 img {
   width: 2rem;
   height: auto;
@@ -72,6 +85,7 @@ img {
 
 .container {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2em;
 }
@@ -153,7 +167,6 @@ footer {
 
 .container > h1 {
   text-align: center;
-  font-family: "Playfair Display", serif;
 }
 
 /* footer */
