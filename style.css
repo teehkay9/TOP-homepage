@@ -72,6 +72,7 @@ h1 {
 
 h2 {
   font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
 
 p {
@@ -79,7 +80,8 @@ p {
 }
 
 img {
-  width: 2rem;
+  min-width: 2em;
+  width: 2em;
   height: auto;
 }
 
@@ -111,7 +113,6 @@ footer {
 
 .about-image img {
   width: 100%; /* Ensures the image takes full width */
-  height: 100%;
   object-fit: cover; /* Keeps aspect ratio while covering the area */
 }
 
@@ -127,7 +128,7 @@ footer {
 
 .projects-container {
   display: flex;
-  flex-direction: column; /* Set to row */
+  flex-direction: column;
   gap: 0.5rem;
 }
 
@@ -149,6 +150,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1; /* Share space with the paragraph */
+}
+
+.inner-container > h2 {
+  width: 70%;
 }
 
 .project-card > p {
@@ -205,4 +210,20 @@ address > section {
   width: 80%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .projects-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-content,
+  .contact-image {
+    width: 100%;
+  }
 }
